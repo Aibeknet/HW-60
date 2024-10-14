@@ -21,7 +21,6 @@ const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
         <Typography variant="body1">{message.message}</Typography>
         <Typography variant="caption" color="textSecondary">
           {dayjs(message.datetime).format('LLLL')}
-          {/*{new Date(message.datetime).toLocaleString()}*/}
         </Typography>
       </CardContent>
     </Card>
